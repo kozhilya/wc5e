@@ -17,6 +17,7 @@
 // Import JavaScript modules
 import { registerSettings } from './settings.js';
 import { preloadTemplates } from './preloadTemplates.js';
+import { dndLanguageSetup, polyglotSetup } from './languages.js';
 
 // Initialize module
 Hooks.once('init', async () => {
@@ -26,6 +27,7 @@ Hooks.once('init', async () => {
 
   // Register custom module settings
   registerSettings();
+  dndLanguageSetup();
 
   // Preload Handlebars templates
   await preloadTemplates();
@@ -45,3 +47,4 @@ Hooks.once('ready', async () => {
 });
 
 // Add any additional hooks if necessary
+Hooks.once('polyglot.init', polyglotSetup);

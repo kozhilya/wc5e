@@ -1,9 +1,8 @@
 {
   "private": true,
   "name": "wc5e",
-  "description": "<description of the package>",
-  "license": "<please choose an appropriate license. https://choosealicense.com/ is a great place to get more information if you are unsure>",
-  "homepage": "<optionally the URL to your repository or another homepage>",
+  "description": "Implementation of WC5E Homebrew that introduce Azeroth to D&D 5e",
+  "license": "MIT License",
   "repository": {
     "type": "git",
     "url": "<optionally the URL to your repository>"
@@ -13,8 +12,8 @@
   },
   "contributors": [
     {
-      "name": "<your name>",
-      "email": "<optionally your e-mail address>"
+      "name": "KozhIlya",
+      "email": "kozhilya@gmail.com"
     }
   ],
   "type": "module",

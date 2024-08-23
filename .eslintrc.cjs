@@ -14,11 +14,7 @@ module.exports = {
     browser: true,
   },
 
-  extends: [
-    'eslint:recommended',
-    '@typhonjs-fvtt/eslint-config-foundry.js/0.8.0',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['eslint:recommended', '@typhonjs-fvtt/eslint-config-foundry.js/0.8.0', 'plugin:prettier/recommended'],
 
   plugins: [],
 

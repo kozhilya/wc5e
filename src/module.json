@@ -1,32 +1,169 @@
 {
   "id": "wc5e",
-  "title": "<human readable title for wc5e>",
-  "description": "<description of the package>",
+  "title": "WC5E",
+  "description": "Implementation of WC5E Homebrew that introduce Azeroth to D&D 5e",
   "authors": [
     {
-      "name": "<your name>",
-      "email": "<optionally your e-mail address>",
-      "discord": "<optionally your discord username>"
+      "name": "ViktoorFrankenstein"
+    },
+    {
+      "name": "Intervención",
+      "discord": "@intervencion"
+    },
+    {
+      "name": "KozhIlya",
+      "email": "kozhilya@gmail.com",
+      "discord": "@teswa"
     }
   ],
   "url": "This is auto replaced",
-  "license": "<please choose an appropriate license. https://choosealicense.com/ is a great place to get more information if you are unsure>",
-  "readme": "<optionally the URL to your readme>",
+  "license": "MIT License",
+  "readme": "README.md",
   "bugs": "<optionally the URL to your issue list>",
   "changelog": "<optionally the URL to your changelog>",
   "version": "This is auto replaced",
   "compatibility": {
-    "minimum": "10",
-    "verified": "10"
+    "minimum": "11",
+    "verified": "12"
   },
   "scripts": [],
-  "esmodules": [
-    "module/wc5e.js"
+  "esmodules": ["module/wc5e.js"],
+  "styles": ["styles/wc5e.css"],
+  "packs": [
+    {
+      "name": "wc5e-backgrounds",
+      "label": "Backgrounds",
+      "path": "packs/wc5e-backgrounds",
+      "type": "Item",
+      "system": "dnd5e",
+      "module": "wc5e"
+    },
+    {
+      "name": "wc5e-class-abilities",
+      "label": "Class Abilities",
+      "path": "packs/wc5e-class-abilities",
+      "type": "Item",
+      "system": "dnd5e",
+      "module": "wc5e"
+    },
+    {
+      "name": "wc5e-class-subclasses",
+      "label": "Subclasses",
+      "path": "packs/wc5e-class-subclasses",
+      "type": "Item",
+      "system": "dnd5e",
+      "module": "wc5e"
+    },
+    {
+      "name": "wc5e-classes",
+      "label": "Classes",
+      "path": "packs/wc5e-classes",
+      "type": "Item",
+      "system": "dnd5e",
+      "module": "wc5e"
+    },
+    {
+      "name": "wc5e-equipment",
+      "label": "Equipment",
+      "path": "packs/wc5e-equipment",
+      "type": "Item",
+      "system": "dnd5e",
+      "module": "wc5e"
+    },
+    {
+      "name": "wc5e-feats",
+      "label": "Feats",
+      "path": "packs/wc5e-feats",
+      "type": "Item",
+      "system": "dnd5e",
+      "module": "wc5e"
+    },
+    {
+      "name": "wc5e-monsters-and-minions",
+      "label": "Monsters and Minions",
+      "path": "packs/wc5e-monsters-and-minions.db",
+      "type": "Item",
+      "system": "dnd5e",
+      "module": "wc5e"
+    },
+    {
+      "name": "wc5e-race-abilities",
+      "label": "Race Abilities",
+      "path": "packs/wc5e-race-abilities",
+      "type": "Item",
+      "system": "dnd5e",
+      "module": "wc5e"
+    },
+    {
+      "name": "wc5e-races",
+      "label": "Races",
+      "path": "packs/wc5e-races",
+      "type": "Item",
+      "system": "dnd5e",
+      "module": "wc5e"
+    },
+    {
+      "name": "wc5e-races-old",
+      "label": "Races (old)",
+      "path": "packs/wc5e-races-old",
+      "type": "Item",
+      "system": "dnd5e",
+      "module": "wc5e"
+    },
+    {
+      "name": "wc5e-spells",
+      "label": "WC5E Spells",
+      "path": "packs/wc5e-spells",
+      "type": "Item",
+      "system": "dnd5e",
+      "module": "wc5e"
+    }
   ],
-  "styles": [
-    "styles/wc5e.css"
+  "packFolders": [
+    {
+      "name": "WC5E",
+      "sorting": "m",
+      "color": "#303060",
+      "packs": [
+        "wc5e-monsters-and-minions",
+        "wc5e-spells"
+      ],
+      "folders": [
+        {
+          "name": "Classes",
+          "sorting": "m",
+          "color": "#303060",
+          "packs": [
+            "wc5e-classes",
+            "wc5e-class-subclasses",
+            "wc5e-class-abilities"
+          ]
+        },
+        {
+          "name": "Character options",
+          "sorting": "m",
+          "color": "#303060",
+          "packs": [
+            "wc5e-backgrounds",
+            "wc5e-feats",
+            "wc5e-equipment"
+          ],
+          "folders": [
+            {
+              "name": "Races",
+              "sorting": "m",
+              "color": "#303060",
+              "packs": [
+                "wc5e-races",
+                "wc5e-races-old",
+                "wc5e-race-abilities"
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "packs": [],
   "languages": [
     {
       "lang": "en",
