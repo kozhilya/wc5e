@@ -5,10 +5,10 @@
   "license": "MIT License",
   "repository": {
     "type": "git",
-    "url": "<optionally the URL to your repository>"
+    "url": "https://github.com/kozhilya/wc5e"
   },
   "bugs": {
-    "url": "<optionally the URL to your issues list>"
+    "url": "https://github.com/kozhilya/wc5e/issues"
   },
   "contributors": [
     {
@@ -23,8 +23,8 @@
     "link-project": "gulp link",
     "clean": "gulp clean",
     "clean:link": "gulp link --clean",
-    "lint": "eslint --ext .js,.cjs,.mjs .",
-    "lint:fix": "eslint --ext .js,.cjs,.mjs --fix .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "format": "prettier --write \"./**/*.(js|cjs|mjs|json|yml|scss)\"",
     "postinstall": "husky install"
   },
